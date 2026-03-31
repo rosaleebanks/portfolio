@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Academic Portfolio</title>
+<title>Rosalee Banks | Academic Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,116 +14,114 @@
   box-sizing: border-box;
 }
 
-/* Style the body */
 body {
   font-family: "Mona Sans", sans-serif;
   margin: 0;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Header/logo Title */
+/* Header */
 .header {
-  padding: 80px;
+  padding: 60px;
   text-align: center;
   background: #0FBF3E;
   color: white;
 }
 
-/* Increase the font size of the heading */
 .header h1 {
-  font-size: 40px;
-  font-weight: 200;
+  font-size: 42px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
 }
 
-/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.header p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Navbar */
 .navbar {
   overflow: hidden;
   background-color: #333;
   position: sticky;
-  position: -webkit-sticky;
   top: 0;
-  padding: 0px 15%;  
+  padding: 0 10%;
 }
 
-/* Style the navigation bar links */
 .navbar a {
   float: left;
   display: block;
   color: white;
-  text-align: center;
   padding: 14px 20px;
   text-decoration: none;
 }
 
-
-/* Right-aligned link */
 .navbar a.right {
   float: right;
 }
 
-/* Change color on hover */
 .navbar a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Active/current link */
 .navbar a.active {
   background-color: #666;
-  color: white;
 }
 
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
+/* Layout */
+.row {
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
 .side {
-  -ms-flex: 30%; /* IE10 */
   flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
+  background-color: #f7f7f7;
+  padding: 25px;
 }
 
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
+.main {
   flex: 70%;
   background-color: white;
-  padding: 20px;
+  padding: 25px;
 }
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
+/* Profile image */
+.profile-img {
+  width: 130px;
+  height: auto;
+  border-radius: 10%;
+  margin-bottom: 10px;
 }
 
 /* Footer */
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #eee;
   font-weight: 300;
 }
 
 .footer a {
-	color: #644d9d;
+  color: #644d9d;
+  text-decoration: none;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
 @media screen and (max-width: 700px) {
-  .row {   
+  .row {
     flex-direction: column;
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .navbar a {
     float: none;
@@ -135,8 +133,8 @@ body {
 <body>
 
 <div class="header">
-  <h1> Rosalee <span style="font-weight:800;">Banks</span></h1>
-  <p>A PhD Student in <strong>Criminal Justice</strong> at <strong>Temple University</strong></p>
+  <h1>Rosalee <span style="font-weight:700;">Banks</span></h1>
+  <p>PhD Student in Criminal Justice, Temple University</p>
 </div>
 
 <div class="navbar">
@@ -149,25 +147,43 @@ body {
 <div class="row">
   <div class="side">
     <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-	<img src="profile.jpg" alt="Photo of me" width="100px" height="100px" style="border-radius: 10%;">
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>Hello!</h3>
-    <p>Rosalee is a doctoral student in Criminal Justice at Temple University College of Liberal Arts. Her academic journey started at Montgomery County Community College, where she first completed an associate's degree in 2021. She then enrolled at Temple, finishing her BA in Criminal Justice with a minor in Public Health, and was awarded the Criminal Justice Excellence Award in 2023. She then completed her MA in Criminal Justice also at Temple, in Spring 2025. Her research interests include the causes of white supremacy in modern contexts, political extremism, juvenile justice, and the intersections of radicalism and digital media. Prior to graduate study, she worked full-time in insurance operations and holds multiple professional designations. She is also serving as the Criminal Justice Honor Society organization's president during her first year in the program. She is currently working on a project that examines divisive propaganda, hate speech and identity formation. Outside of academia, Rosalee enjoys ceramics, gaming, and creative media outlets. She has presented in American Society of Criminology conferences and is a member of the organization. In her PhD, she has goals to utilize both quantitative and qualitative research methodologies to make meaningful impacts to the field, whether through teaching, writing, or practice. Rosalee is committed to academic excellence and highlights what it truly means to be a Temple Owl.</p>
+    <img src="profile.jpg" alt="Photo of Rosalee Banks" class="profile-img">
+
+    <p>Rosalee Banks is a doctoral student in Criminal Justice at Temple University. She completed her BA and MA in Criminal Justice at Temple, where she was awarded the Criminal Justice Excellence Award.</p>
+
+    <p>Her research focuses on political extremism, white supremacy in modern contexts, juvenile justice, and the intersections of radicalism and digital media.</p>
+
+    <p>She has presented at the American Society of Criminology and is currently working on projects examining divisive propaganda, hate speech, and identity formation.</p>
+
+    <h3>Research Interests</h3>
+    <ul>
+      <li>Political extremism and radicalization</li>
+      <li>White supremacy and identity formation</li>
+      <li>Juvenile justice</li>
+      <li>Digital media and propaganda</li>
+    </ul>
   </div>
 
   <div class="main">
-    <h2>Calendar</h2>
-    <h5>Event title, Mar 31, 2026</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Hello!</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    <br>
+    <h2>Current Research</h2>
+
+    <h4>Divisive Propaganda and Identity Formation</h4>
+    <p>This project examines how online hate speech and propaganda contribute to identity formation and social division. Using mixed methods approaches, it explores how narratives are constructed and internalized across digital environments.</p>
+
+    <h4>Patriotic Masculinity and Authority</h4>
+    <p>This research analyzes how patriotic masculinity is performed to reinforce authority and suppress opposition, drawing on qualitative interviews and symbolic interactionist frameworks.</p>
+
+    <h2>Professional Activity</h2>
+    <p>Rosalee serves as President of the Criminal Justice Honor Society and has presented research at national conferences, including the American Society of Criminology.</p>
   </div>
 </div>
 
 <div class="footer">
-  <p>Get in touch at <a href="https://www.linkedin.com/in/rosaleebanks/">LinkedIn</a> | <a href="https://liberalarts.temple.edu/directory/rosalee-banks">Temple University</a> | <a href="mailto:tup03713@temple.edu">Email</a></p>
+  <p>
+    <a href="https://www.linkedin.com/in/rosaleebanks/" target="_blank">LinkedIn</a> |
+    <a href="https://liberalarts.temple.edu/directory/rosalee-banks" target="_blank">Temple Profile</a> |
+    <a href="mailto:tup03713@temple.edu">Email</a>
+  </p>
 </div>
 
 </body>
